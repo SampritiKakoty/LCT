@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+<!--<script>
+$(document).ready(function(){
+    $("button1").click(function(){
+    $("").replaceWith("This is my replacement");
+});
+}); 
+</script>-->
+
+<script>
+$(document).ready(function(){
+    $("replaceButton").click(function(){
+    $("#myDiv").replaceWith("This is my replacement");
+});
+
+    $("#myDiv").hover(function(){
+	$("#myDiv").replaceWith("<b>This is my replacement</b>");
+	
+	});
+});
+</script>
+
+</head>
+<body>
+<h1>Welcome to My Web Page</h1>
+
+<div id="myDiv">Hello. This is div</div>
+<p>Hello. This is para 1</p>
+<p>This is my replacement</p>
+
+<br><button id="replaceButton" >Click Here to Replace</button>
+<br><button id="button" >Click Here to Replace</button>
+
+
+
+</body>
+</html>

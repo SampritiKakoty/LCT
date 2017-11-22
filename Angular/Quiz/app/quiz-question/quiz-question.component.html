@@ -1,0 +1,33 @@
+<p>
+  quiz-question works!
+</p>
+
+Display
+
+<script>
+
+
+
+
+  
+</script>
+
+
+<table >
+<tr style="background-color:yellow" >Question: {{quizQuesDetail.questNo}}</tr>
+<tr>{{quizQuesDetail.quest}}</tr>
+
+<tr *ngFor="let eachOption of quizQuesDetail.option " >
+  
+  <input type="radio"  name="radiogroup" [value]="eachOption" (change)="updateAns( quizQuesDetail.questNo,eachOption )" id="radioBtn" >{{eachOption}}
+
+</tr>
+
+</table>
+
+
+
+<br>
+<a *ngIf="quizQuesDetail.questNo>1" [routerLink]="['/quiz',quizQuesDetail.questNo-1]"  >Previous</a>
+<a *ngIf="quizQuesDetail.questNo <totalQuestion" [routerLink]="['/quiz',quizQuesDetail.questNo+1] ">Next</a>
+<a *ngIf="quizQuesDetail.questNo == totalQuestion" (onclick)="SubmitAll()"  [routerLink]="['/result'] ">SubmitAll</a>

@@ -1,0 +1,22 @@
+<p>
+  prod-duplicatecomponent works!
+</p>
+
+
+
+<input type="text" [value]="sayHello()"/>
+
+<table style="background-color:yellow" >
+  <thead>
+  <tr >
+  <td>Product Name</td>
+  <td>Product Manufacture</td>
+     
+  </tr>
+  </thead>
+  <tr *ngFor="let items of ProductList let i=index">
+  <td>{{items.PName}}</td>
+  <td>{{items.Manufacturer}}</td>
+  
+  </tr>
+  </table>

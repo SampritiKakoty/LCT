@@ -1,0 +1,49 @@
+
+
+
+
+<h2 appMyHighlighter>Check multiple Css</h2>
+
+<div align="center">
+<select [(ngModel)]="myColorShow">
+<option value="red">Red</option>
+<option value="blue">Blue</option>
+</select>
+
+<ul [ngStyle]="{color:myColorShow}" [ngSwitch]="myColorShow">
+
+<li *ngSwitchCase="'red'">You have chosedn {{myColorShow}} color.</li>
+<li *ngSwitchCase="'blue'">You have chosedn {{myColorShow}} color.</li>
+<li *ngSwitchDefault>You have chosedn No color.</li>
+
+</ul>
+</div>
+Hi I am {{myNameDisplay}}.
+<button (click)="changeName()"> Hover to see Differe</button>
+
+
+
+<!--h1  [ngClass]="{class1:ctwo}" align="center">=========This is product Component============</h1>
+-->
+<!--h2 [class.red-title]="myClass" >Check classs<h2-->
+<!--
+<h2 [ngStyle]="{'font-size':mySize,'background-color':myBgColor,'color':myColor }">Check multiple Css</h2>
+<table [ngClass]="{class2:cone}">
+  <thead>
+  <tr >
+  <td>Profuct Name</td>
+  <td>Profuct Manufacture</td>
+  <td *ngIf="show">Profuct Manufacture</td>
+  </tr>
+  </thead>
+  <tr *ngFor="let items of ProductList">
+  <td>{{items.PName}}</td>
+  <td>{{items.Manufacturer}}</td>
+  <td *ngIf="show">{{items.Price}}</td>
+  </tr>
+  </table>
+
+  <button (click)="show=!show">{{show ? 'Hide' :'Show'}}</button>
+  <button (click)="toggle()">Toggle The Color</button>
+
+-->

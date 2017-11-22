@@ -1,0 +1,28 @@
+<p>
+  employee works!
+</p>
+
+Pls enter the form::
+
+<form #EmpDetailForm ="ngForm" (ngSubmit)="DisplayDetails(EmpDetailForm.value)">
+<pre>
+<label>Emp No:</label> <input type="text" name="empNo" ngModel>
+<label>Emp Name</label> <input type="text" name="empName" ngModel>
+</pre>
+
+<div align="centre" ngModelGroup="AddressDetails" >
+  <pre>
+  
+  <label>Emp City</label> <input type="text" name="empCity" #empC="ngModel" required ngModel>
+  <label>Emp State</label> <input type="text" name="empState" ngModel>
+
+</pre>
+
+</div>
+<button type="submit" >SUBMIT</button>
+
+{{empC.pristine }}
+
+</form>
+
+

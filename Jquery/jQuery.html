@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script  type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	</head>
+	
+<body>
+
+
+<h1 class="c1">Jquery Overview </h1>
+<h1 class="c2">Jquery Overview ...1</h1>
+<h1 class="c1">Jquery Overview ...h2</h1>
+<h1 class="c1">Jquery Overview </h1>
+<h1 class="c1">Jquery Overview </h1>
+
+<script>
+$(document).ready(function(){
+       $("h1:nth-child(2)").click(function(){
+	        $(this).css("color","blue");
+	   });
+	   
+	 /*   $(".c2").click(function(){
+	           $(this).css("color","brown");
+	   });*/
+});
+</script>
+
+<h3 class="c1">Jquery Overview ...h3</h3>
+</body>
+</html>

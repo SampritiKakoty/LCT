@@ -1,0 +1,19 @@
+<p>
+  employee works!
+</p>
+
+
+<table style="background-color:yellow" >
+  <thead>
+  <tr >
+  <td>Emp Name</td>
+  <td>Emp Id</td>
+     
+  </tr>
+  </thead>
+  <tr *ngFor="let emp of employees ">
+  <td>{{emp.empname}}</td>
+  <td>{{emp.empno}}</td>
+  
+  </tr>
+  </table>

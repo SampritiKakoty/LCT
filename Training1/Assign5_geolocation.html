@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<script type="text/javascript">
+
+    function checktheGeoLocation(){
+        var div1=document.getElementById("div1");
+
+
+      if(navigator.geolocation) {
+          console.log("Supported");
+         navigator.geolocation.getCurrentPosition(showPosition, showError)
+
+
+      }
+      else{
+          console.log("Sorry No Support");
+      }
+
+
+
+    }
+
+
+    function showPosition(position){
+        div1.innerHTML="Lattitude is ::"+position.coords.latitude +"Longi::"+position.coords.longitude;
+        console.log("show position");
+    }
+
+    function showError(){
+        div1.innerHTML="User Denied";
+        console.log("show error");
+    }
+</script>
+
+</head>
+<body>
+<input type="button" value="get Location" onclick="checktheGeoLocation()" />
+
+<div id="div1"/>
+
+
+</body>
+</html>

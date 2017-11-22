@@ -1,0 +1,32 @@
+
+	h1,p{
+	color:blue;
+	margin-left:150px
+	}
+/*	h2{
+	color:red;
+	margin-left:75px
+	}
+	p{
+	color:yellow;
+	margin-left:28px
+	}
+	
+	.c1{
+		color:red;
+		margin-left:150px
+		
+	}
+	
+	.c2{
+		color:orange;
+		margin-left:75px
+		
+	}*/
+	
+	*{
+		margin-left:100px;
+		color:orange
+	}
+	
+	 h1:first-letter {font-size: 5em;}

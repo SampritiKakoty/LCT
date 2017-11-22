@@ -1,0 +1,44 @@
+<p>
+  emp-model-form works!
+</p>
+
+
+<form [formGroup]="empForm" (ngSubmit)="displayForm()">
+  <pre>
+<div class="form-group">
+    <label class="center-block">Name:
+      <input class="form-control" formControlName="name">
+    </label>
+    <label class="center-block">Id:
+      <input class="form-control" formControlName="empId">
+    </label>
+
+  
+<div formGroupName="AddressDetail" >
+ <label >City:: <input formControlName="city">
+ </label>
+ <label >State:: <input formControlName="state">
+ </label>
+
+ <p>Form value: {{ empForm.value | json }}</p>
+ <p>Form status: {{ empForm.status | json }}</p>
+
+
+ 
+ <div *ngIf="empForm.controls['AddressDetail'].controls['city'].hasError('minLength')">
+    hfjkhfh::: RRRRR
+
+ </div>
+ Element ::::  {{empForm.controls['AddressDetail'].controls['city'].hasError('minLength')}}
+
+
+</div>
+
+  
+ 
+ 
+  </div>
+
+  <button type="submit" >SUBMIT</button>
+</pre>
+</form>

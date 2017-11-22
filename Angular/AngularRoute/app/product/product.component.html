@@ -1,0 +1,19 @@
+<p>
+  product works!
+</p>
+
+<table style="background-color:yellow" >
+  <thead>
+  <tr >
+  <td>Product Name</td>
+  <td>Product Price</td>
+     
+  </tr>
+  </thead>
+  <tr *ngFor="let items of products">
+  <td>{{items.productname}}</td>
+  <td>{{items.price}}</td>
+  
+  </tr>
+  </table>
+

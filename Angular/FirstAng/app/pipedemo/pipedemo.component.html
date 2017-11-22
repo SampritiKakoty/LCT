@@ -1,0 +1,39 @@
+<p>
+  pipedemo works!
+</p>
+<p> Show name in upper-case Name :: {{name|uppercase}}</p>
+
+<!--Number piping
+
+Salary: {{salary|number}}  Original:: {{salary}}<br>
+Salary= {{salary| number:'1.4-7'}}  Original:: {{salary}}
+
+Amount ={{salary|currency:'Yen':true:'8.2-2'}}<br>
+
+Marks={{ Marks | percent}}<br>
+
+DOB:{{dateOfBirth|date: 'EEE y:dd:MMM Z a'}}<br>
+
+Review::{{review| slice: -50:20}}-->
+
+Name:: {{name | genderpipe:'male'}}
+
+<table>
+  <thead>
+  <tr >
+  <td>Product Name</td>
+  <td>Product Manufacture</td>
+  <td>Product Manufacture Date</td>
+  <td>HIKE</td>
+  <td >Product Manufacture</td>
+  </tr>
+  </thead>
+  <tr *ngFor="let items of ProductList">
+  <td>{{items.PName}}</td>
+  <td>{{items.Manufacturer}}</td>
+  <td>{{items.dom | date :'yy:dd-MMM'}}</td>
+  <td>{{items.hike| percent}}</td>
+  <td >{{items.Price| currency :"INR" :true}}</td>
+  </tr>
+  </table>
+

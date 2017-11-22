@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script type="text/javascript">
+    function makeFaceSmile()
+    {
+    var canvas=document.getElementById("myCanvas");
+    var context=canvas.getContext("2d");
+    context.beginPath();
+    context.arc(100, 75, 50, 0, 2 * Math.PI);
+    context.fillStyle="yellow";
+    context.fill();
+    context.stroke();
+
+        context.beginPath();
+        context.arc(70, 50, 2, 0, 2 * Math.PI);
+        //context.fillStyle="black";
+        //context.fill();
+        context.stroke();
+
+        context.beginPath();
+        context.arc(120, 50, 2, 0, 2 * Math.PI);
+        //context.fillStyle="black";
+       // context.fill();
+        context.stroke();
+
+        context.beginPath();
+        context.moveTo(95, 50);
+        context.lineTo(95,70);
+       // context.fill();
+        context.stroke();
+
+        context.beginPath();
+        context.arc(100, 90, 20, 0,  Math.PI);
+        context.stroke();
+
+        //context.arc(120, 50, 2, 0, 2 * Math.PI);
+
+
+
+    }
+    </script>
+</head>
+<body onload="makeFaceSmile()">
+
+<canvas id="myCanvas" width="200" height="200" style="border:2px solid black">
+    Oops Canvas not supported
+</canvas>
+
+</body>
+</html>

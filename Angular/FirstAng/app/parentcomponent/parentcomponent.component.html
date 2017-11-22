@@ -1,0 +1,11 @@
+
+
+  
+<!--
+
+   <input type="string" [(ngModel)]="nameParent"/>
+   Check: Parent  <app-childcomponent  type="input" [parentName]="nameParent" ></app-childcomponent>
+-->
+I am Parent<br>
+<app-childcomponent (notify)="handleUserUpdated($event)"></app-childcomponent><br>
+ Child Name: {{fromChild}}<br>

@@ -1,0 +1,34 @@
+<p>
+  compo-for16-nov works!
+</p>
+<!--
+Enter value 1: <input type="number" [(ngModel)]="num1" />
+Enter value 2: <input type="number" [(ngModel)]="num2"/>
+-->
+ <button (click)="calculateSum()">Sum</button> 
+ Result = {{sumOfNum}}
+
+ <table >
+  <thead>
+  <tr >
+  <td>Product Name</td>
+  <td>Product Manufacture</td>
+  <td>No Of Likes</td>
+  <td>No of Dislikes</td>
+  <td *ngIf="show">Profuct Manufacture</td>
+  </tr>
+  </thead>
+  <tr *ngFor="let items of ProductList let i=index">
+  <td>{{items.PName}}</td>
+  <td>{{items.Manufacturer}}</td>
+  <td><button (click)="noOfLikesCall(i)" [(ngModel)]="items.noOfLikes">Add Likes  </button>
+  </td>
+  <td></td>
+  <td *ngIf="show">{{items.Price}}</td>
+  </tr>
+  </table>
+
+
+
+
+
