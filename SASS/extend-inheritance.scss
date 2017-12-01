@@ -1,0 +1,20 @@
+.message {
+	border: 3px solid purple;
+	padding: 10px;
+	color: green;
+  }
+  
+  .success {
+	@extend .message;
+	border-color: blue;
+  }
+  
+  .error {
+	@extend .message;
+	border-color: red;
+  }
+  
+  .warning {
+	@extend .message;
+	border-color: #09FF00;
+  }

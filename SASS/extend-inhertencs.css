@@ -1,0 +1,15 @@
+.message, .success, .error, .warning {
+  border: 3px solid purple;
+  padding: 10px;
+  color: green; }
+
+.success {
+  border-color: blue; }
+
+.error {
+  border-color: red; }
+
+.warning {
+  border-color: #09FF00; }
+
+/*# sourceMappingURL=extend-inhertencs.css.map */

@@ -1,0 +1,11 @@
+@mixin test($condition) {
+    $color: if($condition, blue, #503232);
+    color:$color
+}
+.firstClass {
+    @include test(true);
+}
+.secondClass {
+    @include test(false);
+}
+  

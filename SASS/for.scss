@@ -1,0 +1,10 @@
+$classname:for;    
+
+@for $i from 0 through 5
+{
+    .for-#{$i}
+    {
+    font-size: 20px + ($i * 10);
+    }
+}
+  

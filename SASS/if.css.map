@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAIA,WAAY;EAFR,KAAK,EADG,IAA6B;;AAMzC,YAAa;EALT,KAAK,EADG,OAA6B",
+"sources": ["if.scss"],
+"names": [],
+"file": "if.css"
+}

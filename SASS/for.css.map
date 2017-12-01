@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAII,MACA;EACA,SAAS,EAAE,IAAgB;;AAF3B,MACA;EACA,SAAS,EAAE,IAAgB;;AAF3B,MACA;EACA,SAAS,EAAE,IAAgB;;AAF3B,MACA;EACA,SAAS,EAAE,IAAgB;;AAF3B,MACA;EACA,SAAS,EAAE,IAAgB;;AAF3B,MACA;EACA,SAAS,EAAE,IAAgB",
+"sources": ["for.scss"],
+"names": [],
+"file": "for.css"
+}
